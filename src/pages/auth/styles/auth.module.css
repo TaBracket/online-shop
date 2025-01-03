@@ -1,0 +1,33 @@
+.container {
+  @apply flex h-screen w-screen items-center justify-center bg-gray-600;
+}
+.auth-panel {
+  @apply flex h-full w-full flex-col items-center justify-center bg-cover bg-center bg-no-repeat;
+}
+.forms-container {
+  @apply w-[90%] rounded-md bg-gray-300/60 p-2 backdrop-blur-lg;
+}
+.forms-switchers {
+  @apply flex w-full;
+}
+.switcher-btns {
+  @apply flex w-[80px] items-center justify-center border p-2 text-[14px] uppercase;
+}
+.switcher-btns:nth-child(1) {
+  @apply rounded-l-md;
+}
+.switcher-btns:nth-child(2) {
+  @apply rounded-r-md;
+}
+.active-btn {
+  @apply border-primary bg-primary text-secondary;
+}
+.deactive-btn {
+  @apply border-gray-600 text-gray-600;
+}
+.form-container {
+}
+.login-form {
+}
+.sign-up-form {
+}

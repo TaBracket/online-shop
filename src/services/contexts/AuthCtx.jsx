@@ -3,5 +3,10 @@ import React, { createContext } from "react";
 export const AuthCtx = createContext("");
 
 export default function AuthCtxProvider({ children }) {
-  return <AuthCtx.Provider value={"1"}>{children}</AuthCtx.Provider>;
+  const [loginPanel, setLoginPanel] = React.useState(true);
+  return (
+    <AuthCtx.Provider value={{ loginPanel, setLoginPanel }}>
+      {children}
+    </AuthCtx.Provider>
+  );
 }
