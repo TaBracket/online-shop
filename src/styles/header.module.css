@@ -1,0 +1,3 @@
+.container {
+  @apply flex w-full justify-between bg-surf-2 p-4;
+}
