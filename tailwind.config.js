@@ -3,7 +3,13 @@ import colors from "tailwindcss/colors";
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  darkMode: "class",
   theme: {
+    screens: {
+      tablet: "640px",
+      laptop: "1024px",
+      desktop: "1280px",
+    },
     extend: {
       fontFamily: {
         RobotoThin: ["roboto-thin", "sans-serif"],
