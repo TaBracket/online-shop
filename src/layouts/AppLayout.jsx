@@ -1,10 +1,13 @@
 import React from "react";
 import App from "../App";
-import { HeaderContainer } from "./../components";
+import { Header } from "./../components";
+import Dev from "../components/dev-panel/Dev";
+
 export default function AppLayout() {
   return (
     <div>
-      <HeaderContainer />
+      <Header />
+      <Dev />
       <App />
     </div>
   );
