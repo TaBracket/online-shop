@@ -37,23 +37,18 @@
 /* account menu / BasketMenu */
 .BasketMenu {
 }
-.header-BasketMenu-title {
-  @apply flex w-[50px] items-center justify-center p-2;
-}
-.header-BasketMenu-title p {
-  @apply flex cursor-pointer items-center justify-center text-[20px] text-primary;
-  @apply dark:text-tertiary;
+.BasketMenu-title {
+  @apply relative flex items-center justify-center gap-1;
 }
 /* account menu / BasketMenu */
 /* account menu / userMenu */
-.header-userMenu {
+.userMenu {
 }
-.header-userMenu-title {
-  @apply flex w-[50px] items-center justify-center rounded-r-lg p-2 text-surf-6;
-  @apply dark:text-surf-5;
+.UserMenu-title {
+  @apply relative flex items-center justify-center gap-1;
 }
-.header-userMenu-title p {
-  @apply flex cursor-pointer items-center justify-center text-[20px];
+.UserMenu-menu {
+  @apply flex flex-col;
 }
 /* account menu / userMenu */
 /* account menu */

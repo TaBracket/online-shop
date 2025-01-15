@@ -5,15 +5,9 @@ import { IoMdArrowDropdown } from "react-icons/io";
 export default function BasketMenu() {
   return (
     <ul className="BasketMenu">
-      <li className="header-BasketMenu-title">
-        <p>
-          <span>
-            <MdShoppingCart />
-          </span>
-          <span>
-            <IoMdArrowDropdown />
-          </span>
-        </p>
+      <li className="BasketMenu-title">
+        <MdShoppingCart />
+        <ul className="BasketMenu-notifications"></ul>
       </li>
     </ul>
   );
