@@ -1,5 +1,15 @@
-import React, { createContext } from "react";
+import React, { createContext, useState } from "react";
+
 export const AppCtx = createContext("");
+
 export default function AppCtxProvider({ children }) {
-  return <AppCtx.Provider>{children}</AppCtx.Provider>;
+  const [darkMode, setDarkMode] = useState(false);
+  const changeTheme = () => {
+    setDarkMode((prevState) => !prevState);
+  };
+  return (
+    <AppCtx.Provider value={{ darkMode, setDarkMode, changeTheme }}>
+      {children}
+    </AppCtx.Provider>
+  );
 }

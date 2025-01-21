@@ -1,13 +1,15 @@
 import React from "react";
 import "./../../styles/header/header.css";
-import NavBar from "./NavBar";
-import Drawer from "./Drawer";
+import AccountMenu from "./AccountMenu";
+import NavMenu from "./NavMenu";
+import OptionsBar from "./OptionsBar";
 
 export default function Header() {
   return (
-    <div className="header-container">
-      <NavBar />
-      <Drawer />
+    <div className="header">
+      <AccountMenu />
+      <NavMenu />
+      <OptionsBar />
     </div>
   );
 }

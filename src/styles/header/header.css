@@ -1,54 +1,121 @@
-.header-container {
-  @apply flex w-full items-center justify-around;
-}
-/* nav bar */
-.header-navBar {
-  @apply flex min-h-[50px] w-full items-center justify-around bg-surf-2 p-2;
+/* header */
+.header {
+  @apply relative flex h-[50px] w-full items-center justify-between bg-surf-2 px-4 shadow-[0px_0px_4px_rgba(0,0,0,0.5)];
   @apply dark:bg-surf-9;
 }
-/* nav bar */
-/* drawer */
-.header-drawer {
-  @apply absolute left-0 top-0 flex h-screen w-[300px] items-start justify-center bg-surf-2;
-  @apply laptop:hidden;
-  /* drawer */
-}
 /* account menu */
-.header-accountMenu {
-  @apply rounded-md bg-surf-1;
-  @apply dark:bg-surf-8;
+.header--accountMenu {
+  @apply flex w-[20%] items-center justify-start gap-2;
 }
-.header-accountMenu-none-login {
+.header-accountMenu--divider {
+  @apply h-[20px] w-[1px] bg-surf-6;
 }
-.header-accountMenu-none-login button {
-  @apply flex items-center justify-center gap-1 rounded-md bg-surf-1 p-2 font-RobotoBold text-primary shadow-md;
-  @apply hover:shadow-lg;
-  @apply dark:bg-primary dark:text-surf-3 dark:hover:bg-blue-600 dark:hover:text-white;
-}
-.header-accountMenu-none-login button span {
-  @apply font-RobotoBold text-[14px] uppercase;
-}
-.header-accountMenu-none-login button span:nth-of-type(2) {
-  @apply text-[20px];
-}
-.header-accountMenu-loggedIn {
+.header_accountMenu--menus {
   @apply flex items-center justify-center;
 }
-/* account menu / BasketMenu */
-.BasketMenu {
+.header_accountMenu_menus--icon {
+  @apply flex cursor-pointer gap-1 p-1 text-[18px] text-surf-6;
 }
-.BasketMenu-title {
-  @apply relative flex items-center justify-center gap-1;
+.header_accountMenu--Basket {
 }
-/* account menu / BasketMenu */
-/* account menu / userMenu */
-.userMenu {
+.header_accountMenu--userMenu {
 }
-.UserMenu-title {
-  @apply relative flex items-center justify-center gap-1;
-}
-.UserMenu-menu {
-  @apply flex flex-col;
-}
-/* account menu / userMenu */
+
 /* account menu */
+/* nav menu */
+.header-navMenu {
+  @apply flex w-[60%] items-center justify-center gap-4;
+}
+.header_navMenu--links {
+  @apply relative z-[99] flex items-center justify-center gap-1 overflow-hidden rounded-lg p-2 text-surf-6 transition-colors duration-500;
+
+  @apply after:absolute after:left-[-100%] after:top-0 after:z-[-1] after:h-full after:w-full after:rounded-lg after:bg-primary after:transition-all after:duration-300 after:ease-in;
+
+  @apply hover:text-surf-1 hover:after:left-0;
+}
+
+.header_navMenu--links:hover::after {
+  @apply left-0;
+}
+
+.header_navMenu--links span:nth-of-type(1) {
+  @apply mb-[2px] text-[20px] peer-hover:text-surf-1;
+}
+.header_navMenu--links span:nth-of-type(2) {
+  @apply font-RobotoBold text-[12px] uppercase;
+}
+
+/* nav menu */
+/* option bar */
+.optionBar {
+  @apply flex w-[20%] items-center justify-end gap-4;
+}
+.optionBar_title {
+  @apply border-l border-r border-surf-7 px-2 text-secondary;
+}
+.optionBar_title span:nth-of-type(1) {
+  @apply font-RobotoMedium text-[14px] text-secondary;
+}
+.optionBar_title span:nth-of-type(2) {
+  @apply px-[2px] font-RobotoBold text-primary;
+}
+.optionBar_title span:nth-of-type(3) {
+  @apply font-RobotoMedium;
+}
+.optionBar_options {
+  @apply mt-[5px] flex;
+}
+.header_logo {
+  @apply w-[40px] border-r-2 border-surf-6;
+}
+.header_logo h1 {
+  @apply w-full font-RobotoBold text-primary;
+}
+/* theme */
+.optionBar_options_theme--btn {
+  @apply relative p-4;
+}
+.header_themeBtn {
+  @apply h-[25px] w-[90px] rounded-lg p-[2px];
+  @apply focus:outline-none;
+}
+
+.header_theme--insideContainer {
+  @apply flex h-full w-full items-center justify-start;
+}
+.header_theme--insideContainer h2 {
+  @apply font-RobotoBold text-[8px];
+}
+.header_changeTheme--icons {
+  @apply text-[20px];
+}
+.header_theme_insideContainer--lightMode {
+  @apply flex w-full items-center justify-start gap-1 uppercase text-surf-4;
+}
+.header_theme_insideContainer--darkMode {
+  @apply flex w-full items-center justify-start gap-1 uppercase text-surf-6;
+}
+/* theme */
+.header_search {
+  @apply flex items-center justify-center gap-2 rounded-lg;
+}
+.header_search button {
+  @apply text-surf-8;
+  @apply dark:text-surf-6;
+}
+.header_search input {
+  @apply rounded-md bg-surf-4 p-1 font-RobotoMedium text-[12px] text-surf-7 outline-none;
+  @apply dark:bg-surf-8 dark:text-surf-5;
+}
+/* option bar */
+/* header */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/* drawer */
+.drawer {
+  @apply absolute left-0 top-0 hidden h-screen w-[300px] bg-surf-3;
+}
+/* drawer */

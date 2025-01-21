@@ -1,3 +1,3 @@
 import Header from "./header/Header";
-
-export { Header };
+import Drawer from "./header/Drawer";
+export { Header, Drawer };
