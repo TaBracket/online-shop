@@ -1,0 +1,12 @@
+.devPanel {
+  @apply p-2 w-[200px] h-[600px] absolute top-[50%] right-[-200px] translate-y-[-50%] bg-purple-400 flex flex-col justify-center items-center rounded-l-lg shadow-md cursor-pointer transition-all duration-100 ease-in-out;
+}
+
+.devPanel::after {
+  content: "";
+  @apply w-[10px] h-[100px] absolute bg-purple-700 rounded-l-lg left-[-10px];
+}
+
+.devPanel:hover {
+  @apply right-0;
+}
