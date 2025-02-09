@@ -1,0 +1,9 @@
+.changeTheme {
+  @apply p-2  flex justify-center items-center rounded-lg transition-colors duration-100 ease-linear;
+}
+.changeTheme--icon-light {
+  @apply text-yellow-400;
+}
+.changeTheme--icon-dark {
+  @apply text-zinc-700;
+}

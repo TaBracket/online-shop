@@ -1,0 +1,13 @@
+.navMenu {
+  @apply hidden w-full justify-center items-center gap-4;
+  @apply laptop:flex desktop:gap-8;
+}
+.navMenu--items {
+  @apply flex justify-center items-center gap-1 text-zinc-600 cursor-pointer;
+}
+.navMenu_items--icon {
+  @apply mb-1;
+}
+.navMenu_items--title {
+  @apply font-Poppins-Medium text-[14px] capitalize;
+}

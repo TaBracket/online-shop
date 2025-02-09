@@ -1,0 +1,48 @@
+.mainHeader {
+  @apply flex justify-start items-center w-screen px-4 py-2 bg-zinc-300 shadow-[0px_0px_6px_rgba(0,0,0,0.5)] gap-2;
+  @apply dark:bg-zinc-900;
+  @apply desktop:gap-0;
+}
+/*  */
+/*  */
+/*  */
+.mainHeader--accountMenu {
+  @apply flex justify-start items-center;
+  @apply desktop:w-[20%];
+}
+.mainHeader_accountMenu--openDrawerBtn {
+  @apply desktop:hidden;
+}
+.mainHeader_accountMenu--openDrawerBtn button {
+  @apply flex justify-center items-center text-[20px];
+}
+.mainHeader_accountMenu--menusContainer {
+  @apply justify-center items-center hidden gap-2;
+  @apply desktop:flex;
+}
+.mainHeader_accountMenu_menusContainer--userMenu {
+  @apply flex justify-center items-center gap-1 text-zinc-600 cursor-pointer relative;
+}
+.mainHeader_accountMenu_menusContainer--basketMenu {
+  @apply flex justify-center items-center gap-1 text-zinc-600 cursor-pointer relative;
+}
+/*  */
+/*  */
+/*  */
+.mainHeader--navMenu {
+  @apply flex justify-center items-center;
+  @apply desktop:w-[60%];
+}
+/*  */
+/*  */
+/*  */
+.mainHeader--utilsMenu {
+  @apply flex justify-end items-center  gap-2 ml-auto;
+  @apply desktop:w-[20%];
+}
+.mainHeader_utilsMenu--search {
+}
+.mainHeader_utilsMenu--theme {
+}
+.mainHeader_utilsMenu--logo {
+}
