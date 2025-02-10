@@ -1,6 +1,6 @@
 .mainHeader {
-  @apply flex justify-start items-center w-screen px-4 py-2 bg-zinc-300 shadow-[0px_0px_6px_rgba(0,0,0,0.5)] gap-2;
-  @apply dark:bg-zinc-900;
+  @apply flex justify-start items-center w-screen px-4 py-2 bg-zinc-300 shadow-[0px_0px_6px_rgba(0,0,0,0.5)] gap-4;
+  @apply dark:bg-zinc-800;
   @apply desktop:gap-0;
 }
 /*  */
@@ -12,6 +12,7 @@
 }
 .mainHeader_accountMenu--openDrawerBtn {
   @apply desktop:hidden;
+  @apply dark:text-zinc-300;
 }
 .mainHeader_accountMenu--openDrawerBtn button {
   @apply flex justify-center items-center text-[20px];
@@ -22,9 +23,11 @@
 }
 .mainHeader_accountMenu_menusContainer--userMenu {
   @apply flex justify-center items-center gap-1 text-zinc-600 cursor-pointer relative;
+  @apply dark:text-zinc-300;
 }
 .mainHeader_accountMenu_menusContainer--basketMenu {
   @apply flex justify-center items-center gap-1 text-zinc-600 cursor-pointer relative;
+  @apply dark:text-zinc-300;
 }
 /*  */
 /*  */

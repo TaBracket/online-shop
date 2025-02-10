@@ -4,6 +4,7 @@
 }
 .navMenu--items {
   @apply flex justify-center items-center gap-1 text-zinc-600 cursor-pointer;
+  @apply dark:text-zinc-300;
 }
 .navMenu_items--icon {
   @apply mb-1;

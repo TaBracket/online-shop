@@ -1,10 +1,13 @@
 .search {
   @apply flex justify-center items-center bg-zinc-100 rounded-md;
+  @apply dark:bg-zinc-700;
 }
 .search input {
-  @apply bg-transparent text-zinc-700 px-2 border-r border-zinc-300 outline-none font-Roboto-Regular;
+  @apply bg-transparent text-zinc-700 text-[14px] px-2 border-r border-zinc-300 outline-none font-Roboto-Regular tracking-wider;
+  @apply dark:border-zinc-500 dark:text-zinc-300;
   @apply focus:outline-none;
 }
 .search button {
   @apply p-2 text-zinc-500;
+  @apply dark:text-zinc-500;
 }

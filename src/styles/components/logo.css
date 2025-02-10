@@ -1,0 +1,3 @@
+.Logo {
+  @apply border border-zinc-100 flex justify-center items-center w-[40px] h-[40px] font-Poppins-Bold bg-blue-500 text-blue-50;
+}

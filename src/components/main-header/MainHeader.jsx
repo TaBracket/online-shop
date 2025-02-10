@@ -37,7 +37,9 @@ export default function MainHeader() {
         <div className="mainHeader_utilsMenu--theme">
           <ChangeTheme />
         </div>
-        <div className="mainHeader_utilsMenu--logo">{/* <Logo /> */}</div>
+        <div className="mainHeader_utilsMenu--logo">
+          <Logo />
+        </div>
       </div>
     </div>
   );
