@@ -4,6 +4,7 @@ import App from "../App";
 import DevPanel from "../components/devPanel/DevPanel";
 import MainHeader from "../components/main-header/MainHeader";
 import { AppCtx } from "../services/contexts/AppCtx";
+import Drawer from "./../components/main-header/Drawer";
 export default function AppLayout() {
   const appContext = React.useContext(AppCtx);
   const { isDarkMode } = appContext;
@@ -20,6 +21,7 @@ export default function AppLayout() {
     <div className="appLayout">
       <DevPanel />
       <MainHeader />
+      <Drawer />
       <App />
     </div>
   );

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./../../styles/main-header/mainHeader.css";
 import { IoMdMenu, IoMdArrowDropdown } from "react-icons/io";
 import { FaUserCircle, FaShoppingCart } from "react-icons/fa";
@@ -6,13 +6,15 @@ import NavMenu from "./NavMenu";
 import Search from "./Search";
 import ChangeTheme from "../ChangeTheme";
 import Logo from "../Logo";
-
+import { AppCtx } from "../../services/contexts/AppCtx";
 export default function MainHeader() {
+  const appContext = useContext(AppCtx);
+  const { openMainDrawerHandler } = appContext;
   return (
     <div className="mainHeader">
       <div className="mainHeader--accountMenu">
         <div className="mainHeader_accountMenu--openDrawerBtn">
-          <button>
+          <button onClick={openMainDrawerHandler}>
             <IoMdMenu />
           </button>
         </div>

@@ -1,0 +1,42 @@
+.mainDrawer {
+  @apply absolute h-screen w-screen flex bg-zinc-300 flex-col justify-start transition-all ease-linear duration-300 z-[-99999];
+  @apply mobile:w-[300px] mobile:shadow-[1px_0px_4px_rgba(0,0,0,0.5)];
+  @apply dark:bg-zinc-800;
+  @apply desktop:hidden;
+}
+.mainDrawer--closeDrawer {
+  @apply p-4 bg-zinc-500 flex justify-end items-center;
+  @apply dark:bg-zinc-900;
+}
+.mainDrawer_closeDrawer--btn {
+  @apply text-zinc-300 text-[20px];
+}
+.mainDrawer--accordionMenus {
+  @apply w-full flex flex-col justify-start items-center;
+}
+.mainDrawer_accordionMenu--items {
+  @apply w-full flex justify-between items-center py-2 px-4 bg-zinc-200 cursor-pointer border-b border-zinc-400;
+}
+.mainDrawer_accordionMenu_items--hero {
+  @apply w-full flex justify-start items-center gap-2;
+}
+.mainDrawer_accordionMenu_items--hero span {
+  @apply text-[14px] font-Poppins-Medium text-zinc-700 capitalize;
+}
+.mainDrawer_accordionMenu_items--hero span:nth-of-type(1) {
+}
+.mainDrawer_accordionMenu_items--hero span:nth-of-type(2) {
+}
+.mainDrawer_accordionMenu_items--hero span:nth-of-type(3) {
+  @apply ml-auto;
+}
+.mainDrawer--navMenu {
+}
+/*  */
+.openDrawer {
+  @apply left-0 top-0 z-[9999];
+}
+.closeDrawer {
+  @apply left-0 -top-full;
+  @apply mobile:-left-full mobile:top-0;
+}
