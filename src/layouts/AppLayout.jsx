@@ -19,7 +19,7 @@ export default function AppLayout() {
   }, [isDarkMode]);
   return (
     <div className="appLayout">
-      <DevPanel />
+      {/* <DevPanel /> */}
       <MainHeader />
       <Drawer />
       <App />

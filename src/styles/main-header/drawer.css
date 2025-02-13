@@ -15,20 +15,32 @@
   @apply w-full flex flex-col justify-start items-center;
 }
 .mainDrawer_accordionMenu--items {
-  @apply w-full flex justify-between items-center py-2 px-4 bg-zinc-200 cursor-pointer border-b border-zinc-400;
+  @apply w-full flex justify-between items-start gap-2 bg-zinc-200 cursor-pointer border-b border-zinc-400 flex-col;
+  @apply dark:bg-zinc-700 dark:border-zinc-600;
 }
 .mainDrawer_accordionMenu_items--hero {
-  @apply w-full flex justify-start items-center gap-2;
+  @apply w-full flex justify-start items-center gap-2 p-2;
 }
 .mainDrawer_accordionMenu_items--hero span {
   @apply text-[14px] font-Poppins-Medium text-zinc-700 capitalize;
+  @apply dark:text-zinc-300;
+}
+.mainDrawer_accordionMenu_userMenu--subMenu {
+  @apply w-full flex flex-col justify-center items-center;
+}
+.mainDrawer_accordionMenu--basketMenu {
+  @apply relative;
 }
 .mainDrawer_accordionMenu_items--hero span:nth-of-type(1) {
+  @apply text-[18px];
 }
 .mainDrawer_accordionMenu_items--hero span:nth-of-type(2) {
 }
 .mainDrawer_accordionMenu_items--hero span:nth-of-type(3) {
   @apply ml-auto;
+}
+.mainDrawer_accordionMenu_items--hero span:nth-of-type(4) {
+  @apply absolute left-[95px] top-[50%] translate-y-[-50%] bg-red-600 w-[15px] h-[15px] rounded-full flex justify-center items-center text-white text-[12px];
 }
 .mainDrawer--navMenu {
 }

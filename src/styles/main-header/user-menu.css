@@ -1,0 +1,45 @@
+.userMenu {
+  @apply w-full flex-col justify-start items-start gap-2 bg-zinc-300 p-4;
+}
+.userMenu--infos {
+  @apply w-full;
+}
+.userMenu--infos {
+  @apply w-full flex flex-col capitalize border-b border-zinc-400;
+}
+.userMenu_infos--items {
+  @apply flex justify-start items-center gap-2 text-[14px] text-zinc-700;
+}
+.userMenu_infos--items span:nth-child(1) {
+  @apply font-Roboto-Medium;
+}
+.userMenu_infos--items span:nth-child(2) {
+  @apply font-Poppins-Regular;
+}
+.userMenu--interactions {
+  @apply w-full  flex flex-col gap-1;
+}
+.userMenu--interactions a {
+  @apply flex justify-start items-center gap-2 p-2 rounded-lg bg-zinc-200;
+}
+.userMenu--interactions a span {
+  @apply uppercase font-Poppins-Medium text-zinc-800;
+}
+.userMenu--interactions a span:nth-child(1) {
+  @apply text-[16px];
+}
+.userMenu--interactions a span:nth-child(2) {
+  @apply text-[14px] mt-1;
+}
+.userMenu--interactions a span:nth-child(3) {
+  @apply ml-auto;
+}
+.userMenu_interactions--logOutBtn {
+  @apply w-full bg-rose-600 flex justify-center items-center p-2 rounded-lg mt-4 text-zinc-200 gap-1 text-[18px] uppercase font-Poppins-Medium;
+}
+.openUserMenu {
+  @apply flex opacity-100;
+}
+.closeUserMenu {
+  @apply hidden opacity-0;
+}
