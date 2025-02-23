@@ -1,12 +1,19 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import "./index.css";
+import "./styles/index.css";
 import { BrowserRouter } from "react-router-dom";
 import App from "./App.jsx";
+import AppCtxProvider from "./services/contexts/AppCtx.jsx";
+import AuthCtxProvider from "./services/contexts/AuthCtx.jsx";
+
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <BrowserRouter>
-      <App />
+      <AuthCtxProvider>
+        <AppCtxProvider>
+          <App />
+        </AppCtxProvider>
+      </AuthCtxProvider>
     </BrowserRouter>
-  </StrictMode>
+  </StrictMode>,
 );
