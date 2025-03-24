@@ -26,7 +26,14 @@ export default {
       "Poppins-Bold": ["poppins-bold", "sans-serif"],
       "Poppins-Black": ["poppins-black", "sans-serif"],
     },
-    extend: {},
+    extend: {
+      boxShadow: {
+        menuItem: {},
+        menuItemsHover: {},
+        button: {},
+        buttonHover: {},
+      },
+    },
   },
   plugins: [],
 };
