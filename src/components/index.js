@@ -3,6 +3,6 @@ import DarkMode from "./app/DarkMode";
 import Logo from "./app/Logo";
 import NavMenu from "./app/NavMenu";
 import Search from "./app/Search";
-import USerMenu from "./app/UserMenu";
+import UserMenu from "./app/UserMenu";
 
-export { USerMenu, BasketMenu, NavMenu, Search, Logo, DarkMode };
+export { UserMenu, BasketMenu, NavMenu, Search, Logo, DarkMode };

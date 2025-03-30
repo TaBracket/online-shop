@@ -1,0 +1,32 @@
+.app {
+  @apply flex h-screen w-screen flex-col items-center justify-start gap-1 bg-zinc-300;
+  @apply dark:bg-zinc-600;
+}
+.app--header,
+.app--main,
+.app--footer {
+  @apply flex w-full bg-zinc-200 p-2;
+}
+.app--header {
+  @apply items-center justify-start gap-10;
+}
+.app--header > div {
+  @apply flex items-center justify-center;
+}
+.app_header--authBtn button {
+  @apply rounded-lg bg-blue-600 px-2 py-1 font-Poppins-Bold text-[14px] uppercase text-zinc-200;
+}
+.app_header--userMenu {
+  @apply gap-2;
+}
+.app_header--navMenu {
+}
+.app_header--utilsMenu {
+  @apply ml-auto;
+}
+.app--main {
+  @apply flex-col items-center justify-start;
+}
+.app--footer {
+  @apply mt-auto;
+}

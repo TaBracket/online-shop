@@ -1,0 +1,15 @@
+.navMenu {
+  @apply flex items-center justify-center gap-4;
+}
+.navMenu--items {
+  @apply flex items-center justify-center gap-1;
+}
+.navMenu--items a {
+  @apply flex items-center justify-center gap-1;
+}
+.navMenu--items span {
+  @apply text-[14px] capitalize text-zinc-800;
+}
+.navMenu--items span:nth-child(2) {
+  @apply font-Poppins-Medium;
+}

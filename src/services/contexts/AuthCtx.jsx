@@ -1,7 +1,17 @@
-import React, { createContext } from "react";
+import React, { createContext, useState } from "react";
+import { Navigate } from "react-router-dom";
 
 export const AuthCtx = createContext("");
-
+const userName = "tabracket";
+const password = "123456";
 export default function AuthCtxProvider({ children }) {
-  return <AuthCtx.Provider value="auth context">{children}</AuthCtx.Provider>;
+  const [isLogin, setIsLogin] = useState(false);
+  const moveToLoginPageHandler = () => {
+    Navigate("/login");
+  };
+  return (
+    <AuthCtx.Provider value={{ isLogin, setIsLogin, moveToLoginPageHandler }}>
+      {children}
+    </AuthCtx.Provider>
+  );
 }
