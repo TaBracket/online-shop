@@ -2,6 +2,8 @@ import React, { useContext } from "react";
 import "./styles/App.css";
 import { UserMenu, BasketMenu, NavMenu, Logo, DarkMode } from "./components";
 import { AuthCtx } from "./services/contexts/AuthCtx";
+import AppRoutes from "./services/routes/AppRoutes";
+
 export default function App() {
   const authContext = useContext(AuthCtx);
   const { isLogin, moveToLoginPageHandler } = authContext;
@@ -27,7 +29,9 @@ export default function App() {
           <DarkMode />
         </div>
       </div>
-      <div className="app--main">main</div>
+      <div className="app--main">
+        <AppRoutes />
+      </div>
       <div className="app--footer">footer</div>
     </div>
   );
